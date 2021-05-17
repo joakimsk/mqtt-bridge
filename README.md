@@ -2,9 +2,20 @@
 ## Purpose
 An Arduino Uno with ethernet shield, to receive sensor inputs, pack to json and send using mqtt to a broker.
 
-Secrets are in secret.h
+Username and password for mqtt-broker are placed in ard-mqtt-cli/secret.h
 
 Using [arduino-mqtt](https://github.com/256dpi/arduino-mqtt)
+
+## ard-mqtt-cli/secret.h
+```
+#ifndef _SECRET_H
+#define _SECRET_H
+
+const char* mqttusername = "user";
+const char* mqttpassword = "pass";
+
+#endif // __SECRET_H
+```
 
 ## Testing
 ### Publish
