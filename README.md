@@ -18,6 +18,8 @@ const char* mqttpassword = "pass";
 ```
 
 ## Testing
+OS X: brew install mosquitto
+
 ### Publish
 mosquitto_pub -h test.mosquitto.org -p 1883 -t statsnail/steinvikveien/ras -m "message" -d
 
@@ -29,7 +31,6 @@ mosquitto_sub -h test.mosquitto.org -p 1883 -t statsnail/steinvikveien/ras
 Add -u username -P password if necessary
 
 ### Mosquitto broker local
-brew install mosquitto
 /usr/local/sbin/mosquitto -c mosquitto.conf
 
 ### mosquitto.conf
