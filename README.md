@@ -34,8 +34,10 @@ Add -u username -P password if necessary
 /usr/local/sbin/mosquitto -c mosquitto.conf
 
 ### mosquitto.conf
-listener 10010
-allow_anonymous true
+Consider settings to run a local broker.
+
+- listener 10010
+- allow_anonymous true
 
 ## References
 [w5100 bug](https://arduinodiy.wordpress.com/2017/04/12/the-w5100-bug/)
