@@ -39,6 +39,11 @@ Consider settings to run a local broker.
 - listener 10010
 - allow_anonymous true
 
+## Sensors
+
+### DS18B20 Temperature sensor
+1-wire temperature sensor, implemented in ard-mqtt-ds18b20-cli.ino.
+
 ## References
 [w5100 bug](https://arduinodiy.wordpress.com/2017/04/12/the-w5100-bug/)
 [arduino-mqtt](https://github.com/256dpi/arduino-mqtt)
